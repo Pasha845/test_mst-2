@@ -50,3 +50,25 @@ body {
   mask-size: contain;
   mask-repeat: no-repeat;
 }
+
+.none {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .text {
+    font-size: 11vw;
+  }
+
+  .none {
+    display: inline;
+  }
+
+  .block {
+    display: none;
+  }
+
+  .video {
+    mask-image: url("../img/mask-mobile.png");
+  }
+}
